@@ -1,5 +1,9 @@
-function sum() {
-  // Start coding here !
+function sum(number1, number2, number3, ...rest) {
+  const totalNumber = rest.reduce(
+    (acc, current) => acc + current,
+    number1 + number2 + number3
+  );
+  return totalNumber;
 }
 
 let result1 = sum(1, 2, 3, 4, 5, 6, 7, 8);

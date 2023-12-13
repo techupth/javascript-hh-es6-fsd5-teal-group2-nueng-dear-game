@@ -1,4 +1,13 @@
 let height = undefined;
 let result;
 
-console.log(result); //  Result ควรจะได้ออกมาเป็น “Height is not defined”
+let nullishClosing = (height) => {
+  if (height === undefined) {
+    result = "Height is not defined";
+    return result;
+  }
+};
+
+nullishClosing(height);
+
+console.log(result);
